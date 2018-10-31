@@ -9,20 +9,20 @@
 
 <body>
 
-  <video id="myPlayerID"
+  <video-js id="myPlayerID"
     data-video-id="4784521906001"
     data-account="1752604059001"
     data-player="ryeOJ8f5dZ"
     data-embed="default"
     data-application-id
     class="video-js"
-    controls></video>
-  <script src="//players.brightcove.net/1752604059001/ryeOJ8f5dZ_default/index.min.js"></script>
+    controls></video-js>
+  <script src="https://players.brightcove.net/1752604059001/ryeOJ8f5dZ_default/index.min.js"></script>
 
   <script src="cue-point-cta.js"></script>
 
   <script type="text/javascript">
-    videojs('myPlayerID').ready(function(){
+    videojs.getPlayer('myPlayerID').ready(function() {
       var myPlayer = this;
       myPlayer.cuepointCTA();
     });
